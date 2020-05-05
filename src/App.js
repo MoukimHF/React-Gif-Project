@@ -20,7 +20,7 @@ export default class App extends Component {
 
   performSearch = (query='cats') =>{
 
-    axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=10&api_key=0urK8qymDfBbUUx2CdkB9CnDpNhA8Ix8`)
+    axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&limit=10&api_key=0urK8qymDfBbUUx2CdkB9CnDpNhA8Ix8`)
     .then(response => {
       this.setState({
       gifs: response.data.data,
