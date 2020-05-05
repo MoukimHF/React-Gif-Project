@@ -2,7 +2,6 @@
   "name": "gif-search",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://moukimHf.github.io/React-Gif-Project",
   "devDependencies": {
     "react-scripts": "0.8.5"
   },
@@ -13,8 +12,7 @@
     "react-dom": "^15.4.2"
   },
   "scripts": {
-    "predeployed": "npm run build",
-    "deploy": "gh-pages -d build",
+    "now-build": "react-scripts build && mv build dist",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
